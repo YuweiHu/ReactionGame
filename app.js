@@ -15,6 +15,15 @@ function makeBox() {
         document.getElementById('box').style.top = randPositionTop + 'px';
         document.getElementById('box').style.left = randPositionLeft + 'px';
     }, 100);
+    //生成之圓形隨視窗大小而改變
+    var dynamicBound;
+    if (window.innerHeight > window.innerWidth) {
+        dynamicBound = window.innerHeight / 10;
+    } else {
+        dynamicBound = window.innerWidth / 10;
+    }
+    dynamicBound = dynamicBound + 'px';
+    document.documentElement.style.setProperty('--bound', dynamicBound);
 }
 
 document.getElementById('box').onclick = function() {

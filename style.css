@@ -7,11 +7,15 @@ h1 {
     color: #ffd745
 }
 
+:root {
+    --bound: 0px;
+}
+
 #box {
     background: #2BFFD8;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: var(--bound);
+    width: var(--bound);
     display: block;
     position: absolute;
     top: 50%;

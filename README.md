@@ -1,3 +1,5 @@
-# gitReactionGame
-This is a simple Web game, developed by HTML, CSS and JavaScript!
+# Introduction
+This is a simple web game, developed by HTML and JavaScript!
 
+# How to start ? 
+Just open "index.html" by browser
